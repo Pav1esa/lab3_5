@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Павлеса Олег ПП-21</title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+            // Функція з необов'язковими параметрами та параметрами за замовчуванням
+            function displayMessage(message, color = "black", fontSize = 16) {
+                document.write(`<div style="color:${color}; font-size:${fontSize}pt">${message}</div>`);
+            }
+
+            // Виклики функції з різними параметрами
+            displayMessage("Це великий червоний текст", "red", 24);
+            displayMessage("Текст за замовченням - колір чорний і розмір 16pt");
+            displayMessage("Маленький синій текст", "blue", 10);
+            displayMessage("Текст з зеленим кольором за замовченням", "green");
+        </script>
+    </body>
+</html>
